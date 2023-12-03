@@ -8,13 +8,12 @@ import { ThemeProvider } from '@/components/providers/theme-provider'
 import { ModalProvider } from '@/components/providers/modal-provider'
 import { SocketProvider } from '@/components/providers/socket-provider'
 import { QueryProvider } from '@/components/providers/query-provider'
-import Head from 'next/head'
 
 const font = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Danly's DKRK",
-  description: "Danly's own discord made by legendary AQ",
+  title: "DKRK",
+  description: "Danly's discord made by legendary AQ",
 }
 
 export default function RootLayout({
@@ -25,9 +24,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <head>
-          <link rel="icon" href="/favicon.ico" sizes="any" /> 
-        </head>
         <body className={cn(
           font.className,
           "bg-white dark:bg-[#313338]"
